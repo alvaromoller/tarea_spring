@@ -12,13 +12,16 @@ package com.example.demo;
 public class Medico {
 
     private @Id @GeneratedValue Long id;
-    private String name;
-    private String role;
+    private String nombre;
+    private String especialidad;
+    private String cargo;
 
     Medico() {}
 
-    Medico(String name, String role) {
-        this.name = name;
-        this.role = role;
+    Medico(String nombre, String especialidad ,String cargo) {
+        this.nombre = nombre;
+        this.especialidad = especialidad;
+        this.cargo = cargo;
+
     }
 }
